@@ -22,7 +22,7 @@ sequence_length = 15  # The 1.0-second ultra-fast frame buffer
 
 print(f"\nSetting up folders for: {word_list}")
 for action in actions: 
-    for sequence in range(0, 14):
+    for sequence in range(no_sequences):
         try: 
             os.makedirs(os.path.join(DATA_PATH, action, str(sequence)))
         except:
@@ -62,7 +62,7 @@ mp_hands = mp.solutions.hands
 
 with mp_hands.Hands(min_detection_confidence=0.5, min_tracking_confidence=0.5) as hands:
     for action in actions:
-        for sequence in range(0, 14):
+        for sequence in range(no_sequences):
             
             # --- WAITING SCREEN ---
             while True:
