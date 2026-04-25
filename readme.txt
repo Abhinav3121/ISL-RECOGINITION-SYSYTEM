@@ -16,21 +16,21 @@ Step 1: Collect Data
 Run the data collection tool to build your custom dictionary. The system expects 30 videos (15 frames each) per word to ensure robust lighting and angle variation.
 
 Bash
-python 1_collect_data_live.py
+python collect_data_live.py
 Type the words you want to record separated by commas (e.g., Hello, Thank You, Please). Follow the on-screen prompts.
 
 Step 2: Train the Neural Networks
 Train the dynamic LSTM model on your recorded words:
 
 Bash
-python 2a_train_dynamic.py
+python train_dynamic.py
 The script uses Early Stopping to automatically halt training when the validation accuracy peaks, saving the optimal isl_dynamic_126.h5 model.
 
 Step 3: Run the Application
 Launch the live detection system:
 
 Bash
-python 3_main_app.py
+python main_app.py
 ⌨️ HUD Controls
 While the main application is running, use these keyboard shortcuts:
 
