@@ -2,7 +2,7 @@
 1. Clone the repository
 
 Bash
-git clone [https://github.com/yourusername/ISL-Recognition-System.git](https://github.com/yourusername/ISL-Recognition-System.git)
+git clone [https://https://github.com/Abhinav3121/ISL-RECOGINITION-SYSYTEM.git](https://github.com/yourusername/ISL-Recognition-System.git)
 cd ISL-Recognition-System
 2. Install required dependencies
 It is recommended to use a virtual environment.
