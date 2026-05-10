@@ -22,7 +22,7 @@ sequence_length = 15  # The 1.0-second ultra-fast frame buffer
 
 print(f"\nSetting up folders for: {word_list}")
 for action in actions: 
-    for sequence in range(no_sequences):
+    for sequence in rangeno_sequences):
         try: 
             os.makedirs(os.path.join(DATA_PATH, action, str(sequence)))
         except:
